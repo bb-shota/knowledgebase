@@ -1,0 +1,45 @@
+site_name: bb-shota Memo
+theme:
+  name: material
+  language: ja
+  feature:
+      - navigation.instant
+      - navigation.tabs
+      - navigation.tabs.sticky
+      - navigation.expand
+      - toc.integrate
+      - navigation.top
+
+  icon:
+    logo: material/school
+    repo: fontawesome/brands/git-alt
+  nav: 
+      - hoge: 'index.md'
+      - はじめに: 
+      - 概要:  
+  
+extra_css:
+    - "//fonts.googleapis.com/earlyaccess/notosansjp.css"
+    - "//fonts.googleapis.com/css?family=Open+Sans:600,800"
+    - "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+    - css/custom.css
+
+markdown_extensions:
+    - mdx_math:
+        enable_dollar_delimiter: true
+    - admonition
+    - fontawesome_markdown
+    - codehilite:
+        linenums: true
+    # コードハイライトの設定
+    - codehilite:
+        noclasses: true
+        pygments_style: colorful
+    - footnotes 
+    - def_list 
+    - pymdownx.keys  
+    - pymdownx.highlight
+
+extra_javascript: 
+  - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+

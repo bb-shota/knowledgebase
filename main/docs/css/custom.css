@@ -1,0 +1,51 @@
+/** ヘッダーカラーを緑色に. */
+
+.md-tabs--active {
+    color:#ffffff !important;
+}
+
+.md-typeset h1 {
+    /*font-size: 24pt;*/
+    font-weight: bold;
+    color: #000;
+    border-bottom: solid 2px #243dad;
+    padding-bottom: 5px;
+}
+
+
+.md-typeset > ::before {
+    font-family: "FontAwesome";
+    margin-right: .3em;
+    display: inline-block !important;
+}
+
+.md-typeset h1::before {
+    content: "\f02d " !important;
+}
+
+.md-typeset h2 {
+    border-bottom: 1px dotted #888;
+}
+
+.md-typeset h2::before {
+    display: inline-block !important;
+    font-family: "FontAwesome";
+    content: "\f0a9" !important;
+    margin-right: .3em;
+}
+
+.md-typeset h3::before {
+    content: "\f061 " !important;
+}
+
+.md-typeset h3 {
+    border-bottom: 0.5px dotted rgb(218, 218, 218);
+}
+
+.md-typeset h4::before {
+    content: "\f0da " !important;
+}
+
+.md-typeset h4 {
+    border-bottom: 0.5px dotted rgb(218, 218, 218);
+}
