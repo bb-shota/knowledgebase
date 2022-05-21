@@ -1,23 +1,20 @@
 site_name: bb-shota Memo
 theme:
-  name: material
-  language: ja
-  feature:
-      - navigation.instant
-      - navigation.tabs
-      - navigation.tabs.sticky
-      - navigation.expand
-      - toc.integrate
-      - navigation.top
+    name: material
+    language: ja
+    features:
+        - toc.integrate
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.expand
+        - navigation.sections
+        - navigation.top
+        - toc.follow
 
-  icon:
-    logo: material/school
-    repo: fontawesome/brands/git-alt
-  nav: 
-      - hoge: 'index.md'
-      - はじめに: 
-      - 概要:  
-  
+    icon:
+        logo: material/school
+        repo: fontawesome/brands/git-alt
+
 extra_css:
     - "//fonts.googleapis.com/earlyaccess/notosansjp.css"
     - "//fonts.googleapis.com/css?family=Open+Sans:600,800"
@@ -38,8 +35,12 @@ markdown_extensions:
     - footnotes 
     - def_list 
     - pymdownx.keys  
-    - pymdownx.highlight
+    - pymdownx.highlight:
+        anchor_linenums: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
 
 extra_javascript: 
-  - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+    - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 

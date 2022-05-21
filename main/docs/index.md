@@ -13,9 +13,9 @@
 - [C++テスト](./UE4/UE4Test.md)
 - [ソースコントロール](./UE4/SourceControlSVN.md)
 
-## GitLab
-
-- [インストール方法](./gitlab/Install_gitlab.md)
+## Git
+- [git コマンド](./git/git.md)
+- [Gitlabインストール方法](./git/Install_gitlab.md)
 
 ## AWS
 
