@@ -79,7 +79,9 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="ヘッダー">
     <a href="../.." title="bb-shota Memo" class="md-header__button md-logo" aria-label="bb-shota Memo" data-md-component="logo">
       
@@ -145,13 +147,116 @@
     
   </nav>
   
+    
+      
+<nav class="md-tabs" aria-label="タブ" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Introduction
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../UE4/GameComp/" class="md-tabs__link">
+        UE4
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../certification/AWS/" class="md-tabs__link">
+        Certification
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../git/Install_gitlab/" class="md-tabs__link">
+        Git
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../github_deploy/" class="md-tabs__link md-tabs__link--active">
+        Mkdocs
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../python/" class="md-tabs__link">
+        Python
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
-        
-          
         
       
       <main class="md-main" data-md-component="main">
@@ -164,8 +269,12 @@
                   <div class="md-sidebar__inner">
                     
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="bb-shota Memo" class="md-nav__button md-logo" aria-label="bb-shota Memo" data-md-component="logo">
       
@@ -204,7 +313,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" data-md-state="indeterminate" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -308,7 +417,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" data-md-state="indeterminate" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -356,20 +465,20 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
       
       
       
       
         <label class="md-nav__link" for="__nav_4">
-          Gitlab
+          Git
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Gitlab" data-md-level="1">
+      <nav class="md-nav" aria-label="Git" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
-          Gitlab
+          Git
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -379,8 +488,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gitlab/Install_gitlab/" class="md-nav__link">
+      <a href="../../git/Install_gitlab/" class="md-nav__link">
         インストール方法
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git/git/" class="md-nav__link">
+        gitの基本的使い方
       </a>
     </li>
   
@@ -594,7 +717,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" data-md-state="indeterminate" type="checkbox" id="__nav_6" checked>
       
       
       
@@ -610,6 +733,20 @@
           Python
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -666,126 +803,6 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    見出しを整える
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    どうすればわかりやすくなるのか
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    見出し変更方法
-  </a>
-  
-    <nav class="md-nav" aria-label="見出し変更方法">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    アイコン追加
-  </a>
-  
-    <nav class="md-nav" aria-label="アイコン追加">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    アイコンインストール
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    拡張機能の有効化
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#csscustomcss" class="md-nav__link">
-    CSSフォルダとcustom.cssの追加
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#customcss" class="md-nav__link">
-    custom.cssの有効化
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#customcss_1" class="md-nav__link">
-    custom.cssの編集
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    アンダーライン追加
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    おわり
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    参考
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -810,59 +827,52 @@
 </ul>
 <h2 id="_3">見出し変更方法</h2>
 <p>現状の構成は以下のようになっています。  </p>
-<div class="codehilite" style="background: #ffffff"><pre style="line-height: 125%;"><span></span><code>    mkdocs.yml
-    docs/
-        index.md
-        ...
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>    mkdocs.yml
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    docs/
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        index.md
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        ...
 </code></pre></div>
-
 <h3 id="_4">アイコン追加</h3>
 <h4 id="_5">アイコンインストール</h4>
 <p>アイコンはFont Awesome<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>という無料で利用可能なWebアイコンを使用するため、インストールをします。  </p>
-<div class="codehilite" style="background: #ffffff"><pre style="line-height: 125%;"><span></span><code>pip install fontawesome_markdown
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">pip</span> <span class="n">install</span> <span class="n">fontawesome_markdown</span>
 </code></pre></div>
-
 <h4 id="_6">拡張機能の有効化</h4>
 <p>以下をmkdocs.ymlに追加し、Font Awesomeの拡張機能の有効化をする。</p>
-<div class="codehilite" style="background: #ffffff"><pre style="line-height: 125%;"><span></span><code>markdown_extensions:
-  - fontawesome_markdown
-
-extra_css:
-  - &quot;https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css&quot;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>markdown_extensions:
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  - fontawesome_markdown
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>extra_css:
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>  - &quot;https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css&quot;
 </code></pre></div>
-
 <h4 id="csscustomcss">CSSフォルダとcustom.cssの追加</h4>
 <p>docsフォルダの直下にcssフォルダ作成し、custom.cssを作成する。</p>
-<div class="codehilite" style="background: #ffffff"><pre style="line-height: 125%;"><span></span><code>    mkdocs.yml
-    docs/
-        index.md
-        css/
-          custom.css  
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>    mkdocs.yml
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    docs/
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>        index.md
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>        css/
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>          custom.css  
 </code></pre></div>
-
 <h4 id="customcss">custom.cssの有効化</h4>
 <p>以下をmkdocs.ymlに追加し、custom.cssの有効化をする。</p>
-<div class="codehilite" style="background: #ffffff"><pre style="line-height: 125%;"><span></span><code>extra_css:
-     - css/custom.css   
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>extra_css:
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>     - css/custom.css   
 </code></pre></div>
-
 <h4 id="customcss_1">custom.cssの編集</h4>
 <p>custom.cssに見出し階層(h1,h2,h3...)のそれぞれに使用するアイコンを設定する。アイコン設定する該当部分は<code>content: "\f0a9" !important;</code>の<code>\f0a9</code>で、<a href="https://fontawesome.com/search?s=solid%2Cbrands">Font Awesome</a>で使いたいアイコンを検索し、アイコンのUnicodeを取得します。<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
-<div class="codehilite" style="background: #ffffff"><pre style="line-height: 125%;"><span></span><code><span style="color: #0000CC">.md-typeset</span><span style="color: #bbbbbb"> </span><span style="color: #003366; font-weight: bold">h2</span>::<span style="color: #003366; font-weight: bold">before</span><span style="color: #bbbbbb"> </span><span style="color: #FF0000; background-color: #FFAAAA">{</span><span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span><span style="color: #997700; font-weight: bold">display:</span><span style="color: #bbbbbb"> </span><span style="color: #0066BB; font-weight: bold">inline-block</span><span style="color: #bbbbbb"> </span>!<span style="color: #003366; font-weight: bold">important</span><span style="color: #888888">;</span>
-<span style="color: #bbbbbb">    </span><span style="color: #997700; font-weight: bold">font-family:</span><span style="color: #bbbbbb"> </span><span style="color: #FF0000; background-color: #FFAAAA">&quot;</span><span style="color: #0066BB; font-weight: bold">FontAwesome</span><span style="color: #FF0000; background-color: #FFAAAA">&quot;</span><span style="color: #888888">;</span>
-<span style="color: #bbbbbb">    </span><span style="color: #997700; font-weight: bold">content:</span><span style="color: #bbbbbb"> </span><span style="color: #FF0000; background-color: #FFAAAA">&quot;\</span><span style="color: #0066BB; font-weight: bold">f0a9</span><span style="color: #FF0000; background-color: #FFAAAA">&quot;</span><span style="color: #bbbbbb"> </span>!<span style="color: #003366; font-weight: bold">important</span><span style="color: #888888">;</span>
-<span style="color: #bbbbbb">    </span><span style="color: #997700; font-weight: bold">margin-right:</span><span style="color: #bbbbbb"> </span><span style="color: #0066BB; font-weight: bold">.3em</span><span style="color: #888888">;</span>
-<span style="color: #FF0000; background-color: #FFAAAA">}</span><span style="color: #bbbbbb"></span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>.md-typeset h2::before {
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    display: inline-block !important;
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    font-family: &quot;FontAwesome&quot;;
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    content: &quot;\f0a9&quot; !important;
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    margin-right: .3em;
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>}
 </code></pre></div>
-
 <h3 id="_7">アンダーライン追加</h3>
 <p>custom.cssに見出し階層(h1,h2,h3...)のそれぞれに使用するアンダーラインを設定する。</p>
-<div class="codehilite" style="background: #ffffff"><pre style="line-height: 125%;"><span></span><code><span style="color: #0000CC">.md-typeset</span><span style="color: #bbbbbb"> </span><span style="color: #003366; font-weight: bold">h2</span><span style="color: #bbbbbb"> </span><span style="color: #FF0000; background-color: #FFAAAA">{</span><span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span><span style="color: #997700; font-weight: bold">border-bottom:</span><span style="color: #bbbbbb"> </span><span style="color: #FF0000; background-color: #FFAAAA">1</span><span style="color: #0066BB; font-weight: bold">px</span><span style="color: #bbbbbb"> </span><span style="color: #003366; font-weight: bold">dotted</span><span style="color: #bbbbbb"> </span><span style="color: #0000DD; font-weight: bold">#888</span><span style="color: #888888">;</span>
-<span style="color: #FF0000; background-color: #FFAAAA">}</span><span style="color: #bbbbbb"></span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>.md-typeset h2 {
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    border-bottom: 1px dotted #888;
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>}
 </code></pre></div>
-
 <h2 id="_8">おわり</h2>
 <p>これで本サイトのようになるはず。  </p>
 <h2 id="_9">参考</h2>
@@ -888,6 +898,11 @@ extra_css:
           </div>
         </div>
         
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
       </main>
       
         <footer class="md-footer">
@@ -911,13 +926,13 @@ extra_css:
       
       
         
-        <a href="../../python/DearPyGUI/" class="md-footer__link md-footer__link--next" aria-label="次: DearPyGui" rel="next">
+        <a href="../../python/" class="md-footer__link md-footer__link--next" aria-label="次: Index" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 次
               </span>
-              DearPyGui
+              Index
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -947,7 +962,7 @@ extra_css:
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.placeholder": "\u691c\u7d22", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.integrate", "navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.sections", "navigation.top", "toc.follow"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.placeholder": "\u691c\u7d22", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version.title": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.ed9748b7.min.js"></script>

@@ -79,7 +79,9 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="ヘッダー">
     <a href="../.." title="bb-shota Memo" class="md-header__button md-logo" aria-label="bb-shota Memo" data-md-component="logo">
       
@@ -145,13 +147,116 @@
     
   </nav>
   
+    
+      
+<nav class="md-tabs" aria-label="タブ" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Introduction
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../GameComp/" class="md-tabs__link md-tabs__link--active">
+        UE4
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../certification/AWS/" class="md-tabs__link">
+        Certification
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../git/Install_gitlab/" class="md-tabs__link">
+        Git
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../mkdocs/github_deploy/" class="md-tabs__link">
+        Mkdocs
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../python/" class="md-tabs__link">
+        Python
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
-        
-          
         
       
       <main class="md-main" data-md-component="main">
@@ -164,8 +269,12 @@
                   <div class="md-sidebar__inner">
                     
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="ナビゲーション" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="bb-shota Memo" class="md-nav__button md-logo" aria-label="bb-shota Memo" data-md-component="logo">
       
@@ -365,7 +474,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" data-md-state="indeterminate" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -413,20 +522,20 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
       
       
       
       
         <label class="md-nav__link" for="__nav_4">
-          Gitlab
+          Git
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Gitlab" data-md-level="1">
+      <nav class="md-nav" aria-label="Git" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
-          Gitlab
+          Git
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -436,8 +545,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gitlab/Install_gitlab/" class="md-nav__link">
+      <a href="../../git/Install_gitlab/" class="md-nav__link">
         インストール方法
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git/git/" class="md-nav__link">
+        gitの基本的使い方
       </a>
     </li>
   
@@ -461,7 +584,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" data-md-state="indeterminate" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -523,7 +646,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" data-md-state="indeterminate" type="checkbox" id="__nav_6" checked>
       
       
       
@@ -539,6 +662,20 @@
           Python
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -595,53 +732,6 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#c" class="md-nav__link">
-    C++ クラス作成
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    例
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    参考
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -653,104 +743,102 @@
 <h2 id="c">C++ クラス作成</h2>
 <p>UE4 Editor上からSubSystem classを作成</p>
 <h2 id="_1">例</h2>
-<div class="codehilite" style="background: #ffffff"><pre style="line-height: 125%;"><span></span><code><span style="color: #888888">// Fill out your copyright notice in the Description page of Project Settings.</span>
-
-<span style="color: #557799">#pragma once</span>
-
-<span style="color: #557799">#include</span><span style="color: #bbbbbb"> </span><span style="color: #888888">&quot;CoreMinimal.h&quot;</span><span style="color: #557799"></span>
-<span style="color: #557799">#include</span><span style="color: #bbbbbb"> </span><span style="color: #888888">&quot;Subsystems/GameInstanceSubsystem.h&quot;</span><span style="color: #557799"></span>
-<span style="color: #557799">#include</span><span style="color: #bbbbbb"> </span><span style="color: #888888">&quot;Tickable.h&quot;</span><span style="color: #557799"></span>
-<span style="color: #557799">#include</span><span style="color: #bbbbbb"> </span><span style="color: #888888">&quot;MyInterface.h&quot;</span><span style="color: #557799"></span>
-<span style="color: #557799">#include</span><span style="color: #bbbbbb"> </span><span style="color: #888888">&quot;MyGameInstanceSubsystem.generated.h&quot;</span><span style="color: #557799"></span>
-
-<span style="color: #888888">/**</span>
-<span style="color: #888888"> * </span>
-<span style="color: #888888"> */</span><span style="color: #bbbbbb"></span>
-UCLASS()<span style="color: #bbbbbb"></span>
-<span style="color: #008800; font-weight: bold">class</span><span style="color: #bbbbbb"> </span><span style="color: #BB0066; font-weight: bold">SUBSYSTEMTEST_API</span><span style="color: #bbbbbb"> </span>UMyGameInstanceSubsystem<span style="color: #bbbbbb"> </span><span style="color: #333333">:</span><span style="color: #bbbbbb"> </span><span style="color: #008800; font-weight: bold">public</span><span style="color: #bbbbbb"> </span>UGameInstanceSubsystem,<span style="color: #bbbbbb"> </span><span style="color: #008800; font-weight: bold">public</span><span style="color: #bbbbbb"> </span>FTickableGameObject,<span style="color: #bbbbbb"> </span><span style="color: #008800; font-weight: bold">public</span><span style="color: #bbbbbb"> </span>IMyInterface<span style="color: #bbbbbb"></span>
-{<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">     </span>GENERATED_BODY()<span style="color: #bbbbbb"></span>
-
-<span style="color: #008800; font-weight: bold">public</span><span style="color: #333333">:</span><span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span><span style="color: #888888">// 初期化</span>
-<span style="color: #bbbbbb">    </span><span style="color: #008800; font-weight: bold">virtual</span><span style="color: #bbbbbb"> </span><span style="color: #333399; font-weight: bold">void</span><span style="color: #bbbbbb"> </span>Initialize(FSubsystemCollectionBase<span style="color: #333333">&amp;</span><span style="color: #bbbbbb"> </span>Collection);<span style="color: #bbbbbb"></span>
-
-<span style="color: #bbbbbb">    </span><span style="color: #888888">// 初期化解除</span>
-<span style="color: #bbbbbb">    </span><span style="color: #008800; font-weight: bold">virtual</span><span style="color: #bbbbbb"> </span><span style="color: #333399; font-weight: bold">void</span><span style="color: #bbbbbb"> </span><span style="color: #0066BB; font-weight: bold">Deinitialize</span>();<span style="color: #bbbbbb"></span>
-
-<span style="color: #bbbbbb">    </span><span style="color: #888888">// 呼び出しテスト用</span>
-<span style="color: #bbbbbb">    </span>UFUNCTION(BlueprintCallable)<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span><span style="color: #333399; font-weight: bold">void</span><span style="color: #bbbbbb"> </span>CallTest()<span style="color: #bbbbbb"> </span>{<span style="color: #bbbbbb"> </span>UE_LOG(LogTemp,<span style="color: #bbbbbb"> </span>Log,<span style="color: #bbbbbb"> </span>TEXT(<span style="background-color: #fff0f0">&quot;Test!1&quot;</span>));<span style="color: #bbbbbb"> </span>}<span style="color: #bbbbbb"></span>
-
-<span style="color: #bbbbbb">    </span>UFUNCTION(BlueprintCallable)<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span><span style="color: #333399; font-weight: bold">void</span><span style="color: #bbbbbb"> </span>CallTest2()<span style="color: #bbbbbb"> </span>{<span style="color: #bbbbbb"> </span>UE_LOG(LogTemp,<span style="color: #bbbbbb"> </span>Log,<span style="color: #bbbbbb"> </span>TEXT(<span style="background-color: #fff0f0">&quot;Test2!&quot;</span>));<span style="color: #bbbbbb"> </span>}<span style="color: #bbbbbb"></span>
-
-<span style="color: #bbbbbb">    </span><span style="color: #888888">// FTickableGameObjectからオーバーライド</span>
-<span style="color: #bbbbbb">    </span><span style="color: #008800; font-weight: bold">virtual</span><span style="color: #bbbbbb"> </span>TStatId<span style="color: #bbbbbb"> </span>GetStatId()<span style="color: #bbbbbb"> </span><span style="color: #008800; font-weight: bold">const</span>;<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span><span style="color: #008800; font-weight: bold">virtual</span><span style="color: #bbbbbb"> </span><span style="color: #333399; font-weight: bold">bool</span><span style="color: #bbbbbb"> </span><span style="color: #0066BB; font-weight: bold">IsTickable</span>()<span style="color: #bbbbbb"> </span><span style="color: #008800; font-weight: bold">const</span><span style="color: #bbbbbb"> </span>{<span style="color: #bbbbbb"> </span><span style="color: #008800; font-weight: bold">return</span>(<span style="color: #007020">true</span>);<span style="color: #bbbbbb"> </span>}<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span><span style="color: #008800; font-weight: bold">virtual</span><span style="color: #bbbbbb"> </span><span style="color: #333399; font-weight: bold">void</span><span style="color: #bbbbbb"> </span><span style="color: #0066BB; font-weight: bold">Tick</span>(<span style="color: #333399; font-weight: bold">float</span><span style="color: #bbbbbb"> </span>DeltaTime);<span style="color: #bbbbbb"> </span><span style="color: #008800; font-weight: bold">protected</span><span style="color: #333333">:</span><span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span><span style="color: #888888">// Called when the game starts or when spawned</span>
-
-<span style="color: #bbbbbb">    </span><span style="color: #008800; font-weight: bold">virtual</span><span style="color: #bbbbbb"> </span>ETickableTickType<span style="color: #bbbbbb"> </span>GetTickableTickType()<span style="color: #bbbbbb"> </span><span style="color: #008800; font-weight: bold">const</span>;<span style="color: #bbbbbb"></span>
-
-<span style="color: #bbbbbb">    </span>TArray<span style="color: #333333">&lt;</span>AActor<span style="color: #333333">*&gt;</span><span style="color: #bbbbbb"> </span>OutActors;<span style="color: #bbbbbb"></span>
-
-};<span style="color: #bbbbbb"></span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// Fill out your copyright notice in the Description page of Project Settings.</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="cp">#pragma once</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;CoreMinimal.h&quot;</span><span class="cp"></span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Subsystems/GameInstanceSubsystem.h&quot;</span><span class="cp"></span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Tickable.h&quot;</span><span class="cp"></span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;MyInterface.h&quot;</span><span class="cp"></span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;MyGameInstanceSubsystem.generated.h&quot;</span><span class="cp"></span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="cm">/**</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="cm"> * </span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="cm"> */</span><span class="w"></span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="n">UCLASS</span><span class="p">()</span><span class="w"></span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="k">class</span><span class="w"> </span><span class="nc">SUBSYSTEMTEST_API</span><span class="w"> </span><span class="n">UMyGameInstanceSubsystem</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">UGameInstanceSubsystem</span><span class="p">,</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">FTickableGameObject</span><span class="p">,</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">IMyInterface</span><span class="w"></span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">     </span><span class="n">GENERATED_BODY</span><span class="p">()</span><span class="w"></span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="k">public</span><span class="o">:</span><span class="w"></span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">    </span><span class="c1">// 初期化</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">Initialize</span><span class="p">(</span><span class="n">FSubsystemCollectionBase</span><span class="o">&amp;</span><span class="w"> </span><span class="n">Collection</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">    </span><span class="c1">// 初期化解除</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">Deinitialize</span><span class="p">();</span><span class="w"></span>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">    </span><span class="c1">// 呼び出しテスト用</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">    </span><span class="n">UFUNCTION</span><span class="p">(</span><span class="n">BlueprintCallable</span><span class="p">)</span><span class="w"></span>
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">CallTest</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">UE_LOG</span><span class="p">(</span><span class="n">LogTemp</span><span class="p">,</span><span class="w"> </span><span class="n">Log</span><span class="p">,</span><span class="w"> </span><span class="n">TEXT</span><span class="p">(</span><span class="s">&quot;Test!1&quot;</span><span class="p">));</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">    </span><span class="n">UFUNCTION</span><span class="p">(</span><span class="n">BlueprintCallable</span><span class="p">)</span><span class="w"></span>
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">CallTest2</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">UE_LOG</span><span class="p">(</span><span class="n">LogTemp</span><span class="p">,</span><span class="w"> </span><span class="n">Log</span><span class="p">,</span><span class="w"> </span><span class="n">TEXT</span><span class="p">(</span><span class="s">&quot;Test2!&quot;</span><span class="p">));</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">    </span><span class="c1">// FTickableGameObjectからオーバーライド</span>
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="n">TStatId</span><span class="w"> </span><span class="n">GetStatId</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nf">IsTickable</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">Tick</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">DeltaTime</span><span class="p">);</span><span class="w"> </span><span class="k">protected</span><span class="o">:</span><span class="w"></span>
+<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">    </span><span class="c1">// Called when the game starts or when spawned</span>
+<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>
+<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="n">ETickableTickType</span><span class="w"> </span><span class="n">GetTickableTickType</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>
+<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="w">    </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">AActor</span><span class="o">*&gt;</span><span class="w"> </span><span class="n">OutActors</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>
+<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="p">};</span><span class="w"></span>
 </code></pre></div>
-
-<div class="codehilite" style="background: #ffffff"><pre style="line-height: 125%;"><span></span><code><span style="color: #888888">// Fill out your copyright notice in the Description page of Project Settings.</span>
-
-
-<span style="color: #557799">#include</span><span style="color: #bbbbbb"> </span><span style="color: #888888">&quot;MyGameInstanceSubsystem.h&quot;</span><span style="color: #557799"></span>
-<span style="color: #557799">#include</span><span style="color: #bbbbbb"> </span><span style="color: #888888">&quot;Kismet/GameplayStatics.h&quot;</span><span style="color: #557799"></span>
-<span style="color: #557799">#include</span><span style="color: #bbbbbb"> </span><span style="color: #888888">&quot;GameFramework/Actor.h&quot;</span><span style="color: #557799"></span>
-<span style="color: #557799">#include</span><span style="color: #bbbbbb"> </span><span style="color: #888888">&quot;MyInterface.h&quot;</span><span style="color: #557799"></span>
-<span style="color: #888888">// 初期化</span>
-<span style="color: #333399; font-weight: bold">void</span><span style="color: #bbbbbb"> </span><span style="color: #0066BB; font-weight: bold">UMyGameInstanceSubsystem::Initialize</span>(FSubsystemCollectionBase<span style="color: #333333">&amp;</span><span style="color: #bbbbbb"> </span>Collection)<span style="color: #bbbbbb"></span>
-{<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span><span style="color: #888888">// インターフェース取得</span>
-<span style="color: #bbbbbb">    </span>UGameplayStatics<span style="color: #333333">::</span>GetAllActorsWithInterface(<span style="color: #008800; font-weight: bold">this</span><span style="color: #333333">-&gt;</span>GetWorld(),<span style="color: #bbbbbb"> </span>UMyInterface<span style="color: #333333">::</span>StaticClass(),<span style="color: #bbbbbb"> </span>UMyGameInstanceSubsystem<span style="color: #333333">::</span>OutActors);<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span>UE_LOG(LogTemp,<span style="color: #bbbbbb"> </span>Log,<span style="color: #bbbbbb"> </span>TEXT(<span style="background-color: #fff0f0">&quot;UMyGameInstanceSubsystem::Initialize()&quot;</span>));<span style="color: #bbbbbb"></span>
-}<span style="color: #bbbbbb"></span>
-
-
-<span style="color: #888888">// 初期化解除</span>
-<span style="color: #333399; font-weight: bold">void</span><span style="color: #bbbbbb"> </span><span style="color: #0066BB; font-weight: bold">UMyGameInstanceSubsystem::Deinitialize</span>()<span style="color: #bbbbbb"></span>
-{<span style="color: #bbbbbb"></span>
-
-<span style="color: #bbbbbb">    </span>UE_LOG(LogTemp,<span style="color: #bbbbbb"> </span>Log,<span style="color: #bbbbbb"> </span>TEXT(<span style="background-color: #fff0f0">&quot;UMyGameInstanceSubsystem::Deinitialize()&quot;</span>));<span style="color: #bbbbbb"></span>
-}<span style="color: #bbbbbb"></span>
-
-TStatId<span style="color: #bbbbbb"> </span><span style="color: #0066BB; font-weight: bold">UMyGameInstanceSubsystem::GetStatId</span>()<span style="color: #bbbbbb"> </span><span style="color: #008800; font-weight: bold">const</span><span style="color: #bbbbbb"></span>
-{<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span>RETURN_QUICK_DECLARE_CYCLE_STAT(UMyGameInstanceSubsystem,<span style="color: #bbbbbb"> </span>STATGROUP_Tickables);<span style="color: #bbbbbb"></span>
-}<span style="color: #bbbbbb"></span>
-
-
-ETickableTickType<span style="color: #bbbbbb"> </span><span style="color: #0066BB; font-weight: bold">UMyGameInstanceSubsystem::GetTickableTickType</span>()<span style="color: #bbbbbb"> </span><span style="color: #008800; font-weight: bold">const</span><span style="color: #bbbbbb"></span>
-{<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span><span style="color: #008800; font-weight: bold">return</span><span style="color: #bbbbbb"> </span>IsTemplate()<span style="color: #bbbbbb"> </span><span style="color: #333333">?</span><span style="color: #bbbbbb"> </span>ETickableTickType<span style="color: #333333">::</span>Never<span style="color: #bbbbbb"> </span><span style="color: #333333">:</span><span style="color: #bbbbbb"> </span>ETickableTickType<span style="color: #333333">::</span>Always;<span style="color: #bbbbbb"></span>
-}<span style="color: #bbbbbb"></span>
-
-
-<span style="color: #333399; font-weight: bold">void</span><span style="color: #bbbbbb"> </span><span style="color: #0066BB; font-weight: bold">UMyGameInstanceSubsystem::Tick</span>(<span style="color: #333399; font-weight: bold">float</span><span style="color: #bbbbbb"> </span>DeltaTime)<span style="color: #bbbbbb"></span>
-{<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span>UE_LOG(LogTemp,<span style="color: #bbbbbb"> </span>Log,<span style="color: #bbbbbb"> </span>TEXT(<span style="background-color: #fff0f0">&quot;1&quot;</span>));<span style="color: #bbbbbb"></span>
-
-
-
-
-<span style="color: #bbbbbb">    </span>UE_LOG(LogTemp,<span style="color: #bbbbbb"> </span>Log,<span style="color: #bbbbbb"> </span>TEXT(<span style="background-color: #fff0f0">&quot;Before I/F&quot;</span>));<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span><span style="color: #888888">// インターフェースを持っている対象すべての実行を行う</span>
-<span style="color: #bbbbbb">    </span><span style="color: #008800; font-weight: bold">for</span><span style="color: #bbbbbb"> </span>(AActor<span style="color: #333333">*</span><span style="color: #bbbbbb"> </span>Actor<span style="color: #bbbbbb"> </span><span style="color: #333333">:</span><span style="color: #bbbbbb"> </span>UMyGameInstanceSubsystem<span style="color: #333333">::</span>OutActors)<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span>{<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">        </span>int32<span style="color: #bbbbbb"> </span>val<span style="color: #333333">=</span><span style="color: #bbbbbb"> </span>IMyInterface<span style="color: #333333">::</span>Execute_SampleArgResult(Actor,<span style="color: #bbbbbb">  </span><span style="color: #0000DD; font-weight: bold">100</span>);<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">        </span>UE_LOG(LogTemp,<span style="color: #bbbbbb"> </span>Log,<span style="color: #bbbbbb"> </span>TEXT(<span style="background-color: #fff0f0">&quot;Interface = %d&quot;</span>),val);<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span>}<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span>UE_LOG(LogTemp,<span style="color: #bbbbbb"> </span>Log,<span style="color: #bbbbbb"> </span>TEXT(<span style="background-color: #fff0f0">&quot;After I/F&quot;</span>));<span style="color: #bbbbbb"></span>
-}<span style="color: #bbbbbb"></span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// Fill out your copyright notice in the Description page of Project Settings.</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;MyGameInstanceSubsystem.h&quot;</span><span class="cp"></span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Kismet/GameplayStatics.h&quot;</span><span class="cp"></span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;GameFramework/Actor.h&quot;</span><span class="cp"></span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;MyInterface.h&quot;</span><span class="cp"></span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="c1">// 初期化</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="kt">void</span><span class="w"> </span><span class="nf">UMyGameInstanceSubsystem::Initialize</span><span class="p">(</span><span class="n">FSubsystemCollectionBase</span><span class="o">&amp;</span><span class="w"> </span><span class="n">Collection</span><span class="p">)</span><span class="w"></span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="c1">// インターフェース取得</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="n">UGameplayStatics</span><span class="o">::</span><span class="n">GetAllActorsWithInterface</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">GetWorld</span><span class="p">(),</span><span class="w"> </span><span class="n">UMyInterface</span><span class="o">::</span><span class="n">StaticClass</span><span class="p">(),</span><span class="w"> </span><span class="n">UMyGameInstanceSubsystem</span><span class="o">::</span><span class="n">OutActors</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="n">UE_LOG</span><span class="p">(</span><span class="n">LogTemp</span><span class="p">,</span><span class="w"> </span><span class="n">Log</span><span class="p">,</span><span class="w"> </span><span class="n">TEXT</span><span class="p">(</span><span class="s">&quot;UMyGameInstanceSubsystem::Initialize()&quot;</span><span class="p">));</span><span class="w"></span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="c1">// 初期化解除</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="kt">void</span><span class="w"> </span><span class="nf">UMyGameInstanceSubsystem::Deinitialize</span><span class="p">()</span><span class="w"></span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">    </span><span class="n">UE_LOG</span><span class="p">(</span><span class="n">LogTemp</span><span class="p">,</span><span class="w"> </span><span class="n">Log</span><span class="p">,</span><span class="w"> </span><span class="n">TEXT</span><span class="p">(</span><span class="s">&quot;UMyGameInstanceSubsystem::Deinitialize()&quot;</span><span class="p">));</span><span class="w"></span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="n">TStatId</span><span class="w"> </span><span class="nf">UMyGameInstanceSubsystem::GetStatId</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="w">    </span><span class="n">RETURN_QUICK_DECLARE_CYCLE_STAT</span><span class="p">(</span><span class="n">UMyGameInstanceSubsystem</span><span class="p">,</span><span class="w"> </span><span class="n">STATGROUP_Tickables</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="n">ETickableTickType</span><span class="w"> </span><span class="nf">UMyGameInstanceSubsystem::GetTickableTickType</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">IsTemplate</span><span class="p">()</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">ETickableTickType</span><span class="o">::</span><span class="n">Never</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ETickableTickType</span><span class="o">::</span><span class="n">Always</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>
+<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>
+<a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a><span class="kt">void</span><span class="w"> </span><span class="nf">UMyGameInstanceSubsystem::Tick</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">DeltaTime</span><span class="p">)</span><span class="w"></span>
+<a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a><span class="w">    </span><span class="n">UE_LOG</span><span class="p">(</span><span class="n">LogTemp</span><span class="p">,</span><span class="w"> </span><span class="n">Log</span><span class="p">,</span><span class="w"> </span><span class="n">TEXT</span><span class="p">(</span><span class="s">&quot;1&quot;</span><span class="p">));</span><span class="w"></span>
+<a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a>
+<a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a>
+<a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a>
+<a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a>
+<a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a><span class="w">    </span><span class="n">UE_LOG</span><span class="p">(</span><span class="n">LogTemp</span><span class="p">,</span><span class="w"> </span><span class="n">Log</span><span class="p">,</span><span class="w"> </span><span class="n">TEXT</span><span class="p">(</span><span class="s">&quot;Before I/F&quot;</span><span class="p">));</span><span class="w"></span>
+<a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a><span class="w">    </span><span class="c1">// インターフェースを持っている対象すべての実行を行う</span>
+<a id="__codelineno-1-45" name="__codelineno-1-45" href="#__codelineno-1-45"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">AActor</span><span class="o">*</span><span class="w"> </span><span class="n">Actor</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">UMyGameInstanceSubsystem</span><span class="o">::</span><span class="n">OutActors</span><span class="p">)</span><span class="w"></span>
+<a id="__codelineno-1-46" name="__codelineno-1-46" href="#__codelineno-1-46"></a><span class="w">    </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-1-47" name="__codelineno-1-47" href="#__codelineno-1-47"></a><span class="w">        </span><span class="n">int32</span><span class="w"> </span><span class="n">val</span><span class="o">=</span><span class="w"> </span><span class="n">IMyInterface</span><span class="o">::</span><span class="n">Execute_SampleArgResult</span><span class="p">(</span><span class="n">Actor</span><span class="p">,</span><span class="w">  </span><span class="mi">100</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-1-48" name="__codelineno-1-48" href="#__codelineno-1-48"></a><span class="w">        </span><span class="n">UE_LOG</span><span class="p">(</span><span class="n">LogTemp</span><span class="p">,</span><span class="w"> </span><span class="n">Log</span><span class="p">,</span><span class="w"> </span><span class="n">TEXT</span><span class="p">(</span><span class="s">&quot;Interface = %d&quot;</span><span class="p">),</span><span class="n">val</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-1-49" name="__codelineno-1-49" href="#__codelineno-1-49"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-1-50" name="__codelineno-1-50" href="#__codelineno-1-50"></a><span class="w">    </span><span class="n">UE_LOG</span><span class="p">(</span><span class="n">LogTemp</span><span class="p">,</span><span class="w"> </span><span class="n">Log</span><span class="p">,</span><span class="w"> </span><span class="n">TEXT</span><span class="p">(</span><span class="s">&quot;After I/F&quot;</span><span class="p">));</span><span class="w"></span>
+<a id="__codelineno-1-51" name="__codelineno-1-51" href="#__codelineno-1-51"></a><span class="p">}</span><span class="w"></span>
 </code></pre></div>
-
 <h2 id="_2">参考</h2>
 <ul>
 <li><a href="https://qiita.com/unknown_ds/items/afcff802ab17db486822#gameinstancesubsystem">UE4 プログラミングサブシステムを試してみる</a></li>
@@ -763,6 +851,11 @@ ETickableTickType<span style="color: #bbbbbb"> </span><span style="color: #0066B
             </article>
           </div>
         </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
         
       </main>
       
@@ -823,7 +916,7 @@ ETickableTickType<span style="color: #bbbbbb"> </span><span style="color: #0066B
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.placeholder": "\u691c\u7d22", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.integrate", "navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.sections", "navigation.top", "toc.follow"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.placeholder": "\u691c\u7d22", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version.title": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.ed9748b7.min.js"></script>
