@@ -51,3 +51,4 @@ folder/
 
 ## 参考
 - [gitの管理対象から特定のファイルを外す](https://laraweb.net/environment/2929/)
+- [【 git pull 】コマンド――リモートリポジトリの変更内容を取り込む](https://atmarkit.itmedia.co.jp/ait/articles/2003/06/news019.html)
