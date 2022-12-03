@@ -4,28 +4,28 @@ DockerDocumentを見ながらやれば基本的にはできる。
 
 ## Registry Install
 
-'''
+```
 docker run -d -p 5000:5000 --name registry registry:2
-'''
+```
 
-'''
+```
 docker pull ubuntu
-'''
+```
 
-'''
+```
 docker image tag ubuntu localhost:5000/myfirstimage
 docker push localhost:5000/myfirstimage
-'''
+```
 
 ## Docker Registry API
 
 ### 一覧取得
 
-'''
+```
 curl http://localhost:5000/v2/_catalog
-'''
+```
 
-'''
+```
 StatusCode        : 200
 StatusDescription : OK
 Content           : {"repositories":["dearpygui_python3","ubuntu"]}
@@ -44,13 +44,13 @@ Images            : {}
 InputFields       : {}
 Links             : {}
 ParsedHtml        : mshtml.HTMLDocumentClass
-'''
+```
 
-'''
+```
 curl http://localhost:5000/v2/ubuntu/tags/list
-'''
+```
 
-'''
+```
 StatusCode        : 200
 StatusDescription : OK
 Content           : {"name":"ubuntu","tags":["latest"]}
@@ -70,7 +70,7 @@ InputFields       : {}
 Links             : {}
 ParsedHtml        : mshtml.HTMLDocumentClass
 RawContentLength  : 36
-'''
+```
 
 ## 参考
 
