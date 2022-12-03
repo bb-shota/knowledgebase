@@ -13,7 +13,7 @@
     
     
       
-        <title>gitの基本的使い方 - bb-shota Memo</title>
+        <title>gitlab ContainerResistry - bb-shota Memo</title>
       
     
     
@@ -67,11 +67,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#git" class="md-skip">
-          コンテンツにスキップ
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -103,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              gitの基本的使い方
+              gitlab ContainerResistry
             
           </span>
         </div>
@@ -185,13 +180,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../Other/OhMyPossh/" class="md-tabs__link">
+      <a href="../OhMyPossh/" class="md-tabs__link md-tabs__link--active">
         Other
       </a>
     </li>
@@ -249,15 +246,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../ContainerRegistry/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../git/ContainerRegistry/" class="md-tabs__link">
         Git
       </a>
     </li>
@@ -419,12 +414,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -447,7 +444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Other/OhMyPossh/" class="md-nav__link">
+      <a href="../OhMyPossh/" class="md-nav__link">
         Oh My Poshインストール
       </a>
     </li>
@@ -459,11 +456,19 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Other/gitlab_ContainerResistry/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         gitlab ContainerResistry
       </a>
+      
     </li>
   
 
@@ -475,7 +480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Other/gitlab_runner/" class="md-nav__link">
+      <a href="../gitlab_runner/" class="md-nav__link">
         Gitlab runner
       </a>
     </li>
@@ -709,14 +714,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
       
       
       
@@ -739,7 +742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ContainerRegistry/" class="md-nav__link">
+      <a href="../../git/ContainerRegistry/" class="md-nav__link">
         ContainerRegistry
       </a>
     </li>
@@ -753,7 +756,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Install_gitlab/" class="md-nav__link">
+      <a href="../../git/Install_gitlab/" class="md-nav__link">
         インストール方法
       </a>
     </li>
@@ -765,127 +768,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          gitの基本的使い方
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../git/git/" class="md-nav__link">
         gitの基本的使い方
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    ユースケース
-  </a>
-  
-    <nav class="md-nav" aria-label="ユースケース">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#git-add" class="md-nav__link">
-    更新するファイル追加(git add)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-commit" class="md-nav__link">
-    コミット実行(git commit)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-pull" class="md-nav__link">
-    リモートリポジトリの変更内容を取り込む(git pull)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-status" class="md-nav__link">
-    更新ファイル確認(git status)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-push" class="md-nav__link">
-    リモートリポジトリの変更(git push)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gitgit-rm" class="md-nav__link">
-    gitの管理対象から外す(git rm)
-  </a>
-  
-    <nav class="md-nav" aria-label="gitの管理対象から外す(git rm)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#git-command" class="md-nav__link">
-    git command
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gitignore" class="md-nav__link">
-    .gitignore
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    参考
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1063,38 +950,11 @@
                 
 
 
-<h1 id="git">gitの基本的使い方</h1>
-<h2 id="_1">ユースケース</h2>
-<h3 id="git-add">更新するファイル追加(git add)</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git add filename
-</code></pre></div>
-<h3 id="git-commit">コミット実行(git commit)</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git commit -m &quot;comment&quot;
-</code></pre></div>
-<h3 id="git-pull">リモートリポジトリの変更内容を取り込む(git pull)</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>git pull origin main
-</code></pre></div>
-<h3 id="git-status">更新ファイル確認(git status)</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git status
-</code></pre></div>
-<h3 id="git-push">リモートリポジトリの変更(git push)</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>git push -u origin main
-</code></pre></div>
-<h3 id="gitgit-rm">gitの管理対象から外す(git rm)</h3>
-<h4 id="git-command">git command</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>git rm --cached file.txt
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>git rm -r --cached folder/
-</code></pre></div>
-<h4 id="gitignore">.gitignore</h4>
-<div class="highlight"><span class="filename">.gitignore</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>file.txt
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>folder/
-</code></pre></div>
-<h2 id="_2">参考</h2>
-<ul>
-<li><a href="https://laraweb.net/environment/2929/">gitの管理対象から特定のファイルを外す</a></li>
-<li><a href="https://atmarkit.itmedia.co.jp/ait/articles/2003/06/news019.html">【 git pull 】コマンド――リモートリポジトリの変更内容を取り込む</a></li>
-</ul>
+  <h1>gitlab ContainerResistry</h1>
+
+<p>https://gitlab-docs.creationline.com/ee/administration/packages/container_registry.html
+https://qiita.com/masakura/items/0a0f00dfdddc8ce27f29</p>
+<p>https://qiita.com/infra_buld/items/cc4acfe70ec22b5ba82a</p>
 
 
 
@@ -1118,7 +978,7 @@
     <nav class="md-footer__inner md-grid" aria-label="フッター" >
       
         
-        <a href="../Install_gitlab/" class="md-footer__link md-footer__link--prev" aria-label="前: インストール方法" rel="prev">
+        <a href="../OhMyPossh/" class="md-footer__link md-footer__link--prev" aria-label="前: Oh My Poshインストール" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1127,20 +987,20 @@
               <span class="md-footer__direction">
                 前
               </span>
-              インストール方法
+              Oh My Poshインストール
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../mkdocs/github_deploy/" class="md-footer__link md-footer__link--next" aria-label="次: Githubにデプロイする" rel="next">
+        <a href="../gitlab_runner/" class="md-footer__link md-footer__link--next" aria-label="次: Gitlab runner" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 次
               </span>
-              Githubにデプロイする
+              Gitlab runner
             </div>
           </div>
           <div class="md-footer__button md-icon">
