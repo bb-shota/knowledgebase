@@ -1126,18 +1126,16 @@ services:
     ports:
       - '8080:80'
       - '22:22'
-      - '443:443'</p>
-<div class="codehilite" style="background: #ffffff"><pre style="line-height: 125%;"><span></span><code>volumes:<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">  </span><span style="color: #333333">-</span><span style="color: #bbbbbb"> </span><span style="background-color: #fff0f0">&#39;D:</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\01</span><span style="background-color: #fff0f0">_ws</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\202</span><span style="background-color: #fff0f0">21127_Gitlab\config:/etc/gitlab&#39;</span><span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">  </span><span style="color: #333333">-</span><span style="color: #bbbbbb"> </span><span style="background-color: #fff0f0">&#39;D:</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\01</span><span style="background-color: #fff0f0">_ws</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\202</span><span style="background-color: #fff0f0">21127_Gitlab\logs:/var/log/gitlab&#39;</span><span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">  </span><span style="color: #333333">-</span><span style="color: #bbbbbb"> </span><span style="background-color: #fff0f0">&#39;D:</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\01</span><span style="background-color: #fff0f0">_ws</span><span style="color: #666666; font-weight: bold; background-color: #fff0f0">\202</span><span style="background-color: #fff0f0">21127_Gitlab\data:/var/opt/gitlab&#39;</span><span style="color: #bbbbbb"></span>
-shm_size:<span style="color: #bbbbbb"> </span><span style="background-color: #fff0f0">&#39;256m&#39;</span><span style="color: #bbbbbb"></span>
-networks:<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">    </span>gitlab_net:<span style="color: #bbbbbb"></span>
-<span style="color: #bbbbbb">        </span>ipv4_address:<span style="color: #bbbbbb"> </span><span style="color: #6600EE; font-weight: bold">172.16</span><span style="color: #333333">.</span><span style="color: #6600EE; font-weight: bold">238.2</span><span style="color: #bbbbbb"></span>
-</code></pre></div>
-
-<p>gitlab-runner:
+      - '443:443'
+    volumes:
+      - 'D:\01_ws\20221127_Gitlab\config:/etc/gitlab'
+      - 'D:\01_ws\20221127_Gitlab\logs:/var/log/gitlab'
+      - 'D:\01_ws\20221127_Gitlab\data:/var/opt/gitlab'
+    shm_size: '256m'
+    networks:
+        gitlab_net:
+            ipv4_address: 172.16.238.2
+  gitlab-runner:
     image: 'gitlab/gitlab-runner:latest'
     restart: always
     volumes:
@@ -1148,20 +1146,20 @@ networks:<span style="color: #bbbbbb"></span>
         - gitlab
     networks:
         gitlab_net:
-            ipv4_address: 172.16.238.3</p>
-<p>networks:
+            ipv4_address: 172.16.238.3
+networks:
     gitlab_net:
         ipam:
             config:
-            - subnet: 172.16.238.0/24</p>
-<p>'''</p>
+            - subnet: 172.16.238.0/24
+'''</p>
 <ul>
 <li><a href="https://e-penguiner.com/build-gitlab-runner-with-docker/">Dockerを用いたGitLab Runnerのオンプレミス構築</a></li>
 <li><a href="https://syachiku.net/docker-gitlab-gitlab-runner/">Dockerコンテナでgitlabとgitlab-runnerを構築してCI/CD</a></li>
 </ul>
 <h2 id="gitlab-runner">gitlab runner登録</h2>
 <p>'''
-docker exec -it &lt;コンテナ名&gt; gitlab-runner register --non-interactive --locked=false --url=<GitlabURL> --registration-token=<Gitlabで取得したトークン> --name=container-runner --tag-list=tag-runner --executor=docker --docker-privileged=true --docker-image=docker:20.10.15-dind
+    docker exec -it &lt;コンテナ名&gt; gitlab-runner register --non-interactive --locked=false --url=<GitlabURL> --registration-token=<Gitlabで取得したトークン> --name=container-runner --tag-list=tag-runner --executor=docker --docker-privileged=true --docker-image=docker:20.10.15-dind
 '''</p>
 <ul>
 <li><a href="https://docs.gitlab.com/runner/register/index.html#docker">Registering runners</a></li>

@@ -1125,8 +1125,8 @@ fatal: unable to access 'http://gitlab.example.com/bbshota/test.git/': Could not
 ERROR: Job failed: exit code 1
 '''</p>
 <p>/etc/gitlab-runnerの config.tomlにextra_hostsを追加する
-host名はdocker-compose.yml内で '''hostname: 'gitlab.example.com''' を追加する
-'''
+host名はdocker-compose.yml内で '''hostname: 'gitlab.example.com''' を追加する</p>
+<p>'''
 extra_hosts = ["gitlab.example.com:172.16.238.2"]
 '''</p>
 
