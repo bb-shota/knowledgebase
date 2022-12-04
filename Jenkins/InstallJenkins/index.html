@@ -13,7 +13,7 @@
     
     
       
-        <title>夏休みワクワククラウド計画 - bb-shota Memo</title>
+        <title>Jenkinsインストール方法(Docker) - bb-shota Memo</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#jenkinsdocker" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              夏休みワクワククラウド計画
+              Jenkinsインストール方法(Docker)
             
           </span>
         </div>
@@ -169,13 +169,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../Jenkins/InstallJenkins/" class="md-tabs__link">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
         Jenkins
       </a>
     </li>
@@ -249,15 +251,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../../cloud/plan/" class="md-tabs__link">
         Cloud
       </a>
     </li>
@@ -373,12 +373,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -399,11 +401,59 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Jenkins/InstallJenkins/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Jenkinsインストール方法(Docker)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Jenkinsインストール方法(Docker)
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#docker-compose" class="md-nav__link">
+    docker-compose
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    参考
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -711,14 +761,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
       
       
       
@@ -739,119 +787,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          夏休みワクワククラウド計画
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../cloud/plan/" class="md-nav__link">
         夏休みワクワククラウド計画
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    はじめに
-  </a>
-  
-    <nav class="md-nav" aria-label="はじめに">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    やりたいこと
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    使いたいツール
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    構成案
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    機能検討
-  </a>
-  
-    <nav class="md-nav" aria-label="機能検討">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    検討結果
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    技術ロードマップ
-  </a>
-  
-    <nav class="md-nav" aria-label="技術ロードマップ">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    参考
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -863,7 +803,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../survey_EC2/" class="md-nav__link">
+      <a href="../../cloud/survey_EC2/" class="md-nav__link">
         EC2に関する調査
       </a>
     </li>
@@ -1161,121 +1101,22 @@
                 
 
 
-<h1 id="_1">夏休みワクワククラウド計画</h1>
-<h2 id="_2">はじめに</h2>
-<h3 id="_3">やりたいこと</h3>
-<p>今回のやりたいことは下記の3点。</p>
+<h1 id="jenkinsdocker">Jenkinsインストール方法(Docker)</h1>
+<h2 id="docker-compose">docker-compose</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>version: &quot;3&quot;
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>services:
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  jenkins:
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    container_name: jenkins
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    image: jenkins/jenkins:latest
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    ports:
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>      - 9090:8080
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    volumes:
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>      - &#39;D:\01_ws\20221203_Jenkins\jenkins_home:/var/jenkins_home&#39;
+</code></pre></div>
+<h2 id="_1">参考</h2>
 <ul>
-<li>Mkdocsで作成した静的サイトのデプロイ</li>
-<li>Streamlitで作成した動的サイトのデプロイ</li>
-<li>Gitlabを用いてバージョン管理</li>
-</ul>
-<h3 id="_4">使いたいツール</h3>
-<p>今回、勉強も兼ねて構築をするため、使用したいツールは下記の3点。</p>
-<table>
-<thead>
-<tr>
-<th align="left">ツール</th>
-<th align="left">対象</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">AWS</td>
-<td align="left">環境構築全般</td>
-</tr>
-<tr>
-<td align="left">Gitlab</td>
-<td align="left">バージョン管理/Gitlab Pages</td>
-</tr>
-<tr>
-<td align="left">Dokku</td>
-<td align="left">アプリケーションデプロイ</td>
-</tr>
-</tbody>
-</table>
-<h3 id="_5">構成案</h3>
-<p>上記のやりたいことと使いたいツールから構成案と検討した。</p>
-<ul>
-<li>
-<p>Developer側（開発時）</p>
-<ul>
-<li>sshでAWS上のコンテナにアクセスする</li>
-<li>Gitlabでバージョン管理する</li>
-<li>バージョン管理データを格納する</li>
-<li>Gitlab PageにMkdocsをデプロイする</li>
-<li>dokku上にStreamlitアプリをデプロイする</li>
-</ul>
-</li>
-<li>
-<p>User側（閲覧時）</p>
-<ul>
-<li>Mkdocsのページにアクセスできる</li>
-<li>Streamlitのパージにアクセスできる</li>
-<li>httpsを用いて通信できる</li>
-</ul>
-</li>
-</ul>
-<p>図にすると以下のようになる。<br />
-企画段階のため、構成は非常に簡易に作成した。</p>
-<figure>
-<p><img alt="Image title" src="../fig1.png" width="500" />
-  </p>
-<figcaption>やりたいこと</figcaption>
-</figure>
-<h2 id="_6">機能検討</h2>
-<p>上記の構成を実現するための機能を検討した。</p>
-<h3 id="_7">検討結果</h3>
-<p>下記に必要な機能を洗い出し、対応する技術を検討した。</p>
-<table>
-<thead>
-<tr>
-<th align="left">機能</th>
-<th align="left">要求</th>
-<th align="left">対応する技術</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">Userアクセス制限</td>
-<td align="left">自分だけがアクセスできるようにしたい(開発時/閲覧時)</td>
-<td align="left">AWS IAM / WAF</td>
-</tr>
-<tr>
-<td align="left">DockerImage使用</td>
-<td align="left">Gitlab構成などをDockerImage上で管理し、コンテナを使用したい <br> DockerImageはDockerhubにあるImageを使用したい</td>
-<td align="left">Amazon EC2</td>
-</tr>
-<tr>
-<td align="left">Githubとの連携</td>
-<td align="left">Github上のリポジトリを Gitlab上にクローンしてて使用したい</td>
-<td align="left">Github</td>
-</tr>
-<tr>
-<td align="left">データ保存場所</td>
-<td align="left">コンテナから隔離した場所にデータを保存したい</td>
-<td align="left">Amazon S3</td>
-</tr>
-<tr>
-<td align="left">GitlabPages使用</td>
-<td align="left">GitlabPages環境を構築したい</td>
-<td align="left">Amazon EC2</td>
-</tr>
-</tbody>
-</table>
-<h2 id="_8">技術ロードマップ</h2>
-<p>検討結果を踏まえて習得していく技術の順番を示すロードマップは下記のようになる。コア技術はざっくりDocker関連技術とAWS関連技術となる。</p>
-<figure>
-<p><img alt="Image title" src="../tech-tree.png" width="900" />
-  </p>
-<figcaption>技術ロードマップ</figcaption>
-</figure>
-<h3 id="_9">参考</h3>
-<ul>
-<li><a href="https://qiita.com/okoppe8/items/dc1de147a36797442e4c">AWSにWEBアプリの最小構成環境を作る</a></li>
-<li><a href="https://tech-blog.rakus.co.jp/entry/20211022/aws">【AWS入門】webサーバー構築</a></li>
-<li><a href="https://qiita.com/hiroshik1985/items/9de2dd02c9c2f6911f3b">0から始めるAWS入門①：VPC編</a></li>
-<li><a href="https://qiita.com/minorun365/items/0441e4878f0984a9fc0a">Kubernetes初心者向け：AWSを活用したコンテナ入門ハンズオン手順作ってみた</a></li>
+<li><a href="https://amateur-engineer-blog.com/jenkins-docker/">Docker ComposeでローカルにサクッとJenkinsを構築する</a></li>
+<li><a href="https://fintan.jp/page/1565/">Dockerコンテナ上のJenkinsでコンテナをたててテストを実行する</a></li>
 </ul>
 
 
@@ -1300,7 +1141,7 @@
     <nav class="md-footer__inner md-grid" aria-label="フッター" >
       
         
-        <a href="../../certification/AWS/" class="md-footer__link md-footer__link--prev" aria-label="前: AWS 勉強" rel="prev">
+        <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="前: Introduction" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1309,20 +1150,20 @@
               <span class="md-footer__direction">
                 前
               </span>
-              AWS 勉強
+              Introduction
             </div>
           </div>
         </a>
       
       
         
-        <a href="../survey_EC2/" class="md-footer__link md-footer__link--next" aria-label="次: EC2に関する調査" rel="next">
+        <a href="../../MatlabSimulink/AutomateTest/" class="md-footer__link md-footer__link--next" aria-label="次: AutomateTest" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 次
               </span>
-              EC2に関する調査
+              AutomateTest
             </div>
           </div>
           <div class="md-footer__button md-icon">
