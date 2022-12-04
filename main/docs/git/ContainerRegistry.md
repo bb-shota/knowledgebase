@@ -76,7 +76,11 @@ RawContentLength  : 36
 
 - [Docker Registryを構築する](https://qiita.com/Brutus/items/da63d23be32d505409c6)
 - [Docker Registry](https://docs.docker.com/registry/)
+- [GitLab Container Registry](https://docs.gitlab.com/ee/user/packages/container_registry/)
+- [GitLab Container Registry administration](https://docs.gitlab.com/ee/administration/packages/container_registry.html)
 
 - [gitlabのコンテナレジストリ](https://qiita.com/infra_buld/items/cc4acfe70ec22b5ba82a)
 - [GitLab Container Registry](https://qiita.com/masakura/items/802f4b8ce322d2543c80)
 - [https://qiita.com/tukiyo3/items/2ca5b1eddd455e333016](https://qiita.com/tukiyo3/items/2ca5b1eddd455e333016)
+- [GitLabによるDockerコンテナレジストリの使い方](https://www.nagarelab.com/ja/3501)
+- [proxy環境下でDocker Registryの構築](https://qiita.com/kanegoon/items/e250c0a328673b0fca82)
