@@ -1103,32 +1103,29 @@
 
 <h1 id="gitlab-faq">Gitlab FAQ</h1>
 <h2 id="_1">パスワードリセット</h2>
-<p>'''
-sudo gitlab-rake "gitlab:password:reset[root]"
-Enter password: 
-Confirm password: 
-Password successfully updated for user with username root.
-'''</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo gitlab-rake &quot;gitlab:password:reset[root]&quot;
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Enter password: 
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Confirm password: 
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>Password successfully updated for user with username root.
+</code></pre></div>
 <ul>
 <li><a href="https://www.gitlab.jp/blog/2022/05/27/initial-password/#%E3%83%91%E3%82%B9%E3%83%AF%E3%83%BC%E3%83%89%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88">GitLabの初期パスワード</a></li>
 </ul>
 <h2 id="gitlab-runner">Gitlab Runner名前解決</h2>
-<p>'''
-Preparing environment
-00:01
-Running on runner-vs5qybyi-project-3-concurrent-0 via 5202a64f8037...
-Getting source from Git repository
-00:01
-Fetching changes with git depth set to 20...
-Reinitialized existing Git repository in /builds/bbshota/test/.git/
-fatal: unable to access 'http://gitlab.example.com/bbshota/test.git/': Could not resolve host: gitlab.example.com
-ERROR: Job failed: exit code 1
-'''</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Preparing environment
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>00:01
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Running on runner-vs5qybyi-project-3-concurrent-0 via 5202a64f8037...
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>Getting source from Git repository
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>00:01
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>Fetching changes with git depth set to 20...
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>Reinitialized existing Git repository in /builds/bbshota/test/.git/
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>fatal: unable to access &#39;http://gitlab.example.com/bbshota/test.git/&#39;: Could not resolve host: gitlab.example.com
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>ERROR: Job failed: exit code 1
+</code></pre></div>
 <p>/etc/gitlab-runnerの config.tomlにextra_hostsを追加する
-host名はdocker-compose.yml内で '''hostname: 'gitlab.example.com''' を追加する</p>
-<p>'''
-extra_hosts = ["gitlab.example.com:172.16.238.2"]
-'''</p>
+host名はdocker-compose.yml内で <code>hostname: 'gitlab.example.com</code> を追加する</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>extra_hosts = [&quot;gitlab.example.com:172.16.238.2&quot;]
+</code></pre></div>
 
 
 
