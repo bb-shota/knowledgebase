@@ -1111,56 +1111,54 @@
 <h1 id="gitlab-cicd">Gitlab CI/CD 導入</h1>
 <h2 id="docker-composeyml">docker-compose.yml</h2>
 <p>GitlabとGitlab runnerを同じネットワーク上に追加するため、docker-compose.ymlに記載する。</p>
-<p>'''
-version: '3'
-services:
-  gitlab:
-    image: 'gitlab/gitlab-ee:latest'
-    restart: always
-    hostname: 'gitlab.example.com'
-    environment:
-      GITLAB_OMNIBUS_CONFIG: |
-        external_url 'http://gitlab.example.com'
-        gitlab_rails['gitlab_shell_ssh_port'] = 2222
-        nginx['listen_port'] = 80
-    ports:
-      - '8080:80'
-      - '22:22'
-      - '443:443'
-    volumes:
-      - 'D:\01_ws\20221127_Gitlab\config:/etc/gitlab'
-      - 'D:\01_ws\20221127_Gitlab\logs:/var/log/gitlab'
-      - 'D:\01_ws\20221127_Gitlab\data:/var/opt/gitlab'
-    shm_size: '256m'
-    networks:
-        gitlab_net:
-            ipv4_address: 172.16.238.2
-  gitlab-runner:
-    image: 'gitlab/gitlab-runner:latest'
-    restart: always
-    volumes:
-      - '/var/run/docker.sock:/var/run/docker.sock'
-    ports:
-      - "8093:8093"
-    depends_on:
-        - gitlab
-    networks:
-        gitlab_net:
-            ipv4_address: 172.16.238.3
-networks:
-    gitlab_net:
-        ipam:
-            config:
-            - subnet: 172.16.238.0/24
-'''</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>    version: &#39;3&#39;
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    services:
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    gitlab:
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        image: &#39;gitlab/gitlab-ee:latest&#39;
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        restart: always
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        hostname: &#39;gitlab.example.com&#39;
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        environment:
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        GITLAB_OMNIBUS_CONFIG: |
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>            external_url &#39;http://gitlab.example.com&#39;
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>            gitlab_rails[&#39;gitlab_shell_ssh_port&#39;] = 2222
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>            nginx[&#39;listen_port&#39;] = 80
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>        ports:
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        - &#39;8080:80&#39;
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>        - &#39;22:22&#39;
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>        - &#39;443:443&#39;
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>        volumes:
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>        - &#39;D:\01_ws\20221127_Gitlab\config:/etc/gitlab&#39;
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>        - &#39;D:\01_ws\20221127_Gitlab\logs:/var/log/gitlab&#39;
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>        - &#39;D:\01_ws\20221127_Gitlab\data:/var/opt/gitlab&#39;
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>        shm_size: &#39;256m&#39;
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>        networks:
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>            gitlab_net:
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>                ipv4_address: 172.16.238.2
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>    gitlab-runner:
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>        image: &#39;gitlab/gitlab-runner:latest&#39;
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>        restart: always
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>        volumes:
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>        - &#39;/var/run/docker.sock:/var/run/docker.sock&#39;
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>        ports:
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>        - &quot;8093:8093&quot;
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>        depends_on:
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>            - gitlab
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>        networks:
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>            gitlab_net:
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>                ipv4_address: 172.16.238.3
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>    networks:
+<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>        gitlab_net:
+<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>            ipam:
+<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>                config:
+<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>                - subnet: 172.16.238.0/24
+</code></pre></div>
 <ul>
 <li><a href="https://e-penguiner.com/build-gitlab-runner-with-docker/">Dockerを用いたGitLab Runnerのオンプレミス構築</a></li>
 <li><a href="https://syachiku.net/docker-gitlab-gitlab-runner/">Dockerコンテナでgitlabとgitlab-runnerを構築してCI/CD</a></li>
 </ul>
 <h2 id="gitlab-runner">gitlab runner登録</h2>
-<p>'''
-    docker exec -it &lt;コンテナ名&gt; gitlab-runner register --non-interactive --locked=false --url=<GitlabURL> --registration-token=<Gitlabで取得したトークン> --name=container-runner --tag-list=tag-runner --executor=docker --docker-privileged=true --docker-image=docker:20.10.15-dind
-'''</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>    docker exec -it &lt;コンテナ名&gt; gitlab-runner register --non-interactive --locked=false --url=&lt;GitlabURL&gt; --registration-token=&lt;Gitlabで取得したトークン&gt; --name=container-runner --tag-list=tag-runner --executor=docker --docker-privileged=true --docker-image=docker:20.10.15-dind
+</code></pre></div>
 <ul>
 <li><a href="https://docs.gitlab.com/runner/register/index.html#docker">Registering runners</a></li>
 <li><a href="https://e-penguiner.com/build-gitlab-runner-with-docker/">Dockerを用いたGitLab Runnerのオンプレミス構築</a></li>
