@@ -20,7 +20,6 @@ services:
       - '8080:80'
       - '22:22'
       - '443:443'
-      
     volumes:
       - 'D:\01_ws\20221127_Gitlab\config:/etc/gitlab'
       - 'D:\01_ws\20221127_Gitlab\logs:/var/log/gitlab'
@@ -41,14 +40,11 @@ services:
     networks:
         gitlab_net:
             ipv4_address: 172.16.238.3
-
 networks:
     gitlab_net:
         ipam:
             config:
             - subnet: 172.16.238.0/24
-
-
 '''
 
 - [Dockerを用いたGitLab Runnerのオンプレミス構築](https://e-penguiner.com/build-gitlab-runner-with-docker/)
@@ -56,7 +52,7 @@ networks:
 ## gitlab runner登録
 
 '''
-docker exec -it <コンテナ名> gitlab-runner register --non-interactive --locked=false --url=<GitlabURL> --registration-token=<Gitlabで取得したトークン> --name=container-runner --tag-list=tag-runner --executor=docker --docker-privileged=true --docker-image=docker:20.10.15-dind
+    docker exec -it <コンテナ名> gitlab-runner register --non-interactive --locked=false --url=<GitlabURL> --registration-token=<Gitlabで取得したトークン> --name=container-runner --tag-list=tag-runner --executor=docker --docker-privileged=true --docker-image=docker:20.10.15-dind
 '''
 
 
