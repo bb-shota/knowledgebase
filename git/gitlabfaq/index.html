@@ -547,6 +547,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Other/linux_command/" class="md-nav__link">
+        Linux command
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -920,6 +934,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#failed-to-connect-to-gitlabexamplecom" class="md-nav__link">
+    Failed to connect to gitlab.example.com
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1126,6 +1147,14 @@
 host名はdocker-compose.yml内で <code>hostname: 'gitlab.example.com</code> を追加する</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>extra_hosts = [&quot;gitlab.example.com:172.16.238.2&quot;]
 </code></pre></div>
+<h2 id="failed-to-connect-to-gitlabexamplecom">Failed to connect to gitlab.example.com</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>fatal: unable to access &#39;http://gitlab.example.com/bbshota/test.git/&#39;: Failed to connect to gitlab.example.com port 80 after 131545 ms: Operation timed out
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>network_mode = &quot;host&quot;
+</code></pre></div>
+<ul>
+<li><a href="https://blogs.networld.co.jp/entry/2022/07/14/174933">GitとCI/CDに関する知識ゼロのSEが、GitLabでCI/CDパイプラインを使ってコンテナレジストリにイメージを登録する話</a></li>
+</ul>
 
 
 
