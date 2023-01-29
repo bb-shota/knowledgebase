@@ -13,7 +13,7 @@
     
     
       
-        <title>Oh My Poshインストール - bb-shota Memo</title>
+        <title>Lectures - bb-shota Memo</title>
       
     
     
@@ -67,11 +67,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#oh-my-posh" class="md-skip">
-          コンテンツにスキップ
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -103,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Oh My Poshインストール
+              Lectures
             
           </span>
         </div>
@@ -209,7 +204,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../Lectures/" class="md-tabs__link md-tabs__link--active">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
         Other
       </a>
     </li>
@@ -527,11 +522,19 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../Lectures/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Lectures
       </a>
+      
     </li>
   
 
@@ -541,106 +544,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Oh My Poshインストール
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../OhMyPossh/" class="md-nav__link">
         Oh My Poshインストール
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#font" class="md-nav__link">
-    Font
-  </a>
-  
-    <nav class="md-nav" aria-label="Font">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    インストール
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    設定反映
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#oh-my-posh_1" class="md-nav__link">
-    Oh My Posh
-  </a>
-  
-    <nav class="md-nav" aria-label="Oh My Posh">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    インストール
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    設定反映
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    参考
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1254,35 +1162,10 @@
                 
 
 
-<h1 id="oh-my-posh">Oh My Poshインストール</h1>
-<h2 id="font">Font</h2>
-<h3 id="_1">インストール</h3>
-<h3 id="_2">設定反映</h3>
-<p>New-Item -Path $PROFILE -Type File -Force</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>settings.json
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>{
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    &quot;guid&quot;: &quot;{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}&quot;,
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    &quot;hidden&quot;: false,
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    &quot;name&quot;: &quot;PowerShell&quot;,
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    &quot;source&quot;: &quot;Windows.Terminal.PowershellCore&quot;,
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    &quot;fontFace&quot;: &quot;CaskaydiaCove Nerd Font&quot;
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>}
-</code></pre></div>
-<h2 id="oh-my-posh_1">Oh My Posh</h2>
-<h3 id="_3">インストール</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>winget install oh-my-posh
-</code></pre></div>
-<h3 id="_4">設定反映</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>notepad $PROFILE
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Import-Module oh-my-posh
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>oh-my-posh init pwsh --config &quot;$env:POSH_THEMES_PATH\paradox.omp.json&quot; | Invoke-Expression
-</code></pre></div>
-<h2 id="_5">参考</h2>
+  <h1>Lectures</h1>
+
 <ul>
-<li><a href="https://ohmyposh.dev/docs/installation/windows">Oh My Posh Offical Document</a></li>
-<li><a href="https://learn.microsoft.com/ja-jp/windows/terminal/tutorials/custom-prompt-setup">チュートリアル: Oh My Posh を使用して PowerShell または WSL のカスタム プロンプトをセットアップする</a></li>
-<li><a href="https://dev.classmethod.jp/articles/customize-your-powershell-console-with-oh-my-posh3/">[PowerShell] Oh my Posh (Powerline) を使ってPowerShellコンソールをおしゃれにカスタマイズする</a></li>
+<li><a href="https://iij.github.io/bootcamp/#_2022%E5%B9%B4%E5%BA%A6%E3%82%AB%E3%83%AA%E3%82%AD%E3%83%A5%E3%83%A9%E3%83%A0%E4%B8%80%E8%A6%A7">IIJ Bootcamp 2022</a></li>
 </ul>
 
 
@@ -1307,7 +1190,7 @@
     <nav class="md-footer__inner md-grid" aria-label="フッター" >
       
         
-        <a href="../Lectures/" class="md-footer__link md-footer__link--prev" aria-label="前: Lectures" rel="prev">
+        <a href="../../MatlabSimulink/Stateflow/" class="md-footer__link md-footer__link--prev" aria-label="前: Stateflow" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1316,20 +1199,20 @@
               <span class="md-footer__direction">
                 前
               </span>
-              Lectures
+              Stateflow
             </div>
           </div>
         </a>
       
       
         
-        <a href="../gitlab_ContainerResistry/" class="md-footer__link md-footer__link--next" aria-label="次: gitlab ContainerResistry" rel="next">
+        <a href="../OhMyPossh/" class="md-footer__link md-footer__link--next" aria-label="次: Oh My Poshインストール" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 次
               </span>
-              gitlab ContainerResistry
+              Oh My Poshインストール
             </div>
           </div>
           <div class="md-footer__button md-icon">
