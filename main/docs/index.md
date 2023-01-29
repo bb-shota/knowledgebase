@@ -1,3 +1,5 @@
+
+
 # Introduction
 
 このページは私個人の勉強時の備忘録です。
@@ -16,6 +18,7 @@
 ## Git
 - [git コマンド](./git/git.md)
 - [Gitlabインストール方法](./git/Install_gitlab.md)
+- [Gitlabコンテナレジストリ](./git/ContainerRegistry.md)
 
 ## AWS
 
@@ -28,3 +31,4 @@
 ## other
 
 ### 後で書く
+
