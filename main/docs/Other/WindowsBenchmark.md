@@ -14,5 +14,9 @@ typeperf
 "\Processor(7)\% Processor Time"
 ```
 
+```
+typeperf -cf counter.txt -si 1 -sc 10     
+```
+
 
 - (Windows 10でパフォーマンスカウンターのデータをコマンドで収集する方法（typeperf）)[https://4thsight.xyz/14738]
