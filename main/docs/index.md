@@ -34,6 +34,7 @@
 
 - [講義資料](./Other/Lectures.md)
 - [OhmyPossh](./Other/OhMyPossh.md)
+- [Windows 計測](./Other/WindowsBenchmark.md)
 
 ### 後で書く
 
